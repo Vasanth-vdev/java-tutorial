@@ -1,4 +1,4 @@
-public class Car {
+public class Car extends Vehicle {
     /* 
     String make = "Mahindra";
     String model = "Thar";
@@ -23,8 +23,6 @@ class Food {
         this.name = name;
     }
 }*/
-String name;
-Car(String name) {
-    this.name = name;
-}
+int wheels = 4;
+int doors = 4;
 }
