@@ -7,6 +7,12 @@ public class Car1 {
         this.setModel(model);
         this.setYear(year);
     }
+    //Car1(Car1 car1) {
+      //  this.copy(car1);
+    //}
+    Car1(Car1 car1) {
+        this.copy(car1);
+    }
     public String getName() {
         return name;
     }
@@ -25,4 +31,14 @@ public class Car1 {
     public void setYear(int year) {
         this.year = year;
     }
+    public void copy(Car1 car1) {
+        this.setName(car1.getName());
+        this.setModel(car1.getModel());
+        this.setYear(car1.getYear());
+    }
+    /*public void copy(Car1 car1) {
+        this.setName(car1.getName());
+        this.setModel(car1.getModel());
+        this.setYear(car1.getYear());
+    }*/
 }

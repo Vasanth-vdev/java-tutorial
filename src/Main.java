@@ -26,10 +26,18 @@ public class Main {
         //brand.go();
         //encapsulation-attributes of class will be hidden
         //can be accessed only through methods(getters and setters)
-        Car1 car1 = new Car1("Thar","4X4",2023);
+        //Car1 car1 = new Car1("Thar","4X4",2023);
+        //Car1 car2 = new Car1("Swift","sedan",2020);
+        //copying objects
+        //car1.copy(car2);
+        //Car1 car2 = new Car1(car1);
+        Car1 car1 = new Car1("THAR","4X4",2023);
+        Car1 car2 = new Car1(car1);
+        System.out.println(car1);
+        System.out.println(car2);
         System.out.println(car1.getModel());
         System.out.println(car1.getYear());
-        car1.setName("LAmbo");
         System.out.println(car1.getName());
+        System.out.println(car2.getYear());
     }
 }
